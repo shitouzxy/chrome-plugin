@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Bilibili 封面替换",
+    "version": "1.0",
+    "description": "将 Bilibili 视频封面替换成二次元头像。",
+    "permissions": ["activeTab"],
+    "host_permissions": ["*://www.bilibili.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["*://www.bilibili.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
